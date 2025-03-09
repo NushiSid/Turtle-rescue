@@ -5,6 +5,7 @@
       src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
       <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
       <script src="turtle.js"></script>
+      <script src="research.js"></script>
     </head>
     <body>
         <a-scene physics="gravity:0">
@@ -18,16 +19,19 @@
             <a-entity kinematic-body look-controls wasd-controls="acceleration:200" camera position="-10 -18 -20" rotation="-6 -0.5 0" id="c">
                 <a-entity position="-5 -5 -12">
                 <a-entity position="-0.6 0.13 0" text="color:#bba7fc; font:aileronsemibold; width:12; value:More Turtles to \n be Rescued"></a-entity>
-                <a-entity position="-8 0.3 0" text="color:#bba7fc; font:dejavu; width:20; align:center; value:5"></a-entity>
+                <a-entity position="-8 0.3 0" text="color:#bba7fc; font:dejavu; width:20; align:center; value:5" id="tbr" ></a-entity>
+                <a-entity position="15 0.3 0"id="Amethyst" text="color:#bba7fc; font:dejavu; width:20; align:center;"></a-entity>
+                
+            </a-entity>
             </a-entity>
             <a-sky src = "#s" rotation="-180 10 0"></a-sky>
-            <a-entity gltf-model="#i" position="-10 -25 -12" scale="3 3 3" ></a-entity>
-            <a-entity gltf-model="#t" position="-7 -24 5" scale="3 3 3"></a-entity>
-            <a-entity gltf-model="#t" position="-23 -24 -20" scale="3 3 3"></a-entity>
-            <a-entity gltf-model="#t" position="0 -24 34" scale="3 3 3"></a-entity>
-            <a-entity gltf-model="#t" position="-36 -24 27" scale="3 3 3"></a-entity>
-            <a-entity gltf-model="#t" position="50 -24 18" scale="3 3 3"></a-entity>
-            <a-entity gltf-model="#r" scale="3 3 3" rotation="0 180 0" position="-20 -24 -9" re></a-entity>
+            <a-entity gltf-model="#i" position="-10 -25 -12" scale="3 3 3"></a-entity>
+            <a-entity gltf-model="#t" position="-26 -21 -6" scale="3 3 3" id="fred" static-body="shape:sphere; sphereRadius: 10" crimson></a-entity>
+            <a-entity gltf-model="#t" position="-23 -24 -20" scale="3 3 3" id="mo" static-body="shape:sphere; sphereRadius: 10" crimson></a-entity>
+            <a-entity gltf-model="#t" position="0 -24 34" scale="3 3 3" id="biana" static-body="shape:sphere; sphereRadius: 10" crimson></a-entity>
+            <a-entity gltf-model="#t" position="-36 -24 27" scale="3 3 3" id="fitz" static-body="shape:sphere; sphereRadius: 10" crimson></a-entity>
+            <a-entity gltf-model="#t" position="50 -24 18" scale="3 3 3" id-="grizelda" static-body="shape:sphere; sphereRadius: 10" crimson></a-entity>
+            <a-entity gltf-model="#r" scale="3 3 3" rotation="0 180 0" position="-20 -24 -9" static-body="shape:sphere; sphereRadius: 7" re crimson></a-entity>
         </a-scene>
     </body>
 </html>

@@ -46,4 +46,6 @@ AFRAME.registerComponent("re",{
         });
 
     },
-});
+}); 
+
+
